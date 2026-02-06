@@ -1,0 +1,139 @@
+/* Core Dark Mode Colors */
+:root {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-main: #e0e0e0;
+    --text-muted: #b0b0b0;
+    --accent-blue: #3498db;
+    --accent-orange: #e67e22;
+    --accent-green: #2ecc71;
+    --border-color: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-main);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--bg-color);
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #1a1a1a, #2c3e50);
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border: 1px solid var(--border-color);
+}
+
+header h1 { 
+    margin: 0; 
+    font-size: 2.8em; 
+    letter-spacing: -1px;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.social-links a:hover { 
+    color: #5dade2;
+    text-decoration: underline; 
+}
+
+/* Specific Style for Download Button */
+.social-links a[download] {
+    background-color: var(--accent-green);
+    color: #121212;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.social-links a[download]:hover {
+    background-color: #58d68d;
+}
+
+h2 {
+    border-bottom: 2px solid var(--accent-blue);
+    padding-bottom: 8px;
+    color: var(--accent-blue);
+    margin-top: 40px;
+    font-size: 1.8em;
+}
+
+.entry {
+    background: var(--card-bg);
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.entry h3 { 
+    margin-top: 0; 
+    color: var(--accent-orange); 
+    font-size: 1.4em;
+}
+
+/* Project and Experience Lists */
+ul { padding-left: 20px; }
+li { margin-bottom: 10px; color: var(--text-main); }
+
+.project-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.project-list li {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 3px solid var(--accent-blue);
+}
+
+/* Bio-chip Section Highlight */
+.bio-chip {
+    border-left: 5px solid var(--accent-orange);
+    background: linear-gradient(to right, #251a10, var(--card-bg));
+}
+
+.skills-interests {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skills-interests div {
+    flex: 1;
+    background: #252525;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.skills-interests h3 {
+    color: var(--accent-blue);
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 20px;
+    font-size: 0.9em;
+    color: var(--text-muted);
+}
